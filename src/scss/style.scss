@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swp");
+.favorite, select, ul {
+  font-size: 1.6rem;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ahover {
+  cursor: pointer;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.header {
+  margin: 0 auto;
+  width: 1440px;
+  height: 101px;
+  background-color: #d9d9d9;
+  margin-bottom: 4rem;
+}
+
+.hero {
+  display: flex;
+  width: 1311px;
+}
+
+aside {
+  width: 203px;
+  height: 1302px;
+  margin: 0 8.6rem 0 0;
+  background-color: #d9d9d9;
+}
+
+.content-wrapper {
+  width: 1022px;
+}
+
+.content {
+  width: 1022px;
+  height: 542px;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 30px 48px;
+  margin-bottom: 40px;
+}
+
+.subcontent {
+  width: 487px;
+  height: 61px;
+  background-color: #d9d9d9;
+}
+
+.subcontent.span {
+  width: 100%;
+  height: 168px;
+  grid-column: span 2;
+  background-color: #d9d9d9;
+}
+
+.comments {
+  width: 100%;
+}
+.comments .comments-link {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.comments a {
+  font-size: 1.6rem;
+}
+
+hr {
+  margin: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #d9d9d9;
+  border: none;
+}
+
+.filter-links {
+  display: flex;
+  justify-content: start;
+  gap: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+select {
+  border: none;
+  background-color: #fff;
+  text-decoration: underline;
+  opacity: 0.4;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 20px;
+
+  &:focus {
+      outline: none;
+  }
+}
+
+.favorite {
+  border: none;
+  background-color: #fff;
+  text-decoration: underline;
+  opacity: 0.4;
+}

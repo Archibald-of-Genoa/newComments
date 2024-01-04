@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swp");
-.favorite, select, ul {
+.favorite,
+select,
+ul {
   font-size: 1.6rem;
   color: #000;
   font-family: "Inter", sans-serif;
@@ -20,9 +22,6 @@ html {
 a {
   text-decoration: none;
   color: inherit;
-}
-ahover {
-  cursor: pointer;
 }
 
 body {
@@ -52,6 +51,7 @@ aside {
 
 .content-wrapper {
   width: 1022px;
+  height: 100vh;
 }
 
 .content {
@@ -78,15 +78,71 @@ aside {
   background-color: #d9d9d9;
 }
 
-.comments {
+hr {
   width: 100%;
 }
-.comments .comments-link {
-  font-size: 2rem;
-  font-weight: 500;
-}
-.comments a {
-  font-size: 1.6rem;
+
+.comment-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 603px;
+  height: 24px;
+
+  .filter-links {
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+    padding: 0;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .selectList {
+    display: flex;
+    align-items: center;
+  }
+
+  select {
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    text-decoration: underline;
+    opacity: 0.4;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(/images/Arrow\ 1.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px;
+
+    option {
+      text-decoration: underline;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .favorite {
+    border: none;
+    background-color: #fff;
+    text-decoration: underline;
+    opacity: 0.4;
+  }
+
+  .comments-link {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  a {
+    font-size: 1.6rem;
+  }
 }
 
 hr {
@@ -95,38 +151,4 @@ hr {
   height: 3px;
   background-color: #d9d9d9;
   border: none;
-}
-
-.filter-links {
-  display: flex;
-  justify-content: start;
-  gap: 50px;
-}
-
-ul {
-  list-style: none;
-}
-
-select {
-  border: none;
-  background-color: #fff;
-  text-decoration: underline;
-  opacity: 0.4;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding-right: 20px;
-
-  &:focus {
-      outline: none;
-  }
-}
-
-.favorite {
-  border: none;
-  background-color: #fff;
-  text-decoration: underline;
-  opacity: 0.4;
 }

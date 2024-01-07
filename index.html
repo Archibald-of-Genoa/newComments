@@ -23,9 +23,8 @@
           <div class="subcontent span"></div>
         </div>
 
-        <hr />
-        <div class="comments">
-          <nav class="comment-filters">
+        <hr>
+        <nav class="comment-filters">
             <ul class="filter-links">
               <li>
                 <a class="comments-link active" href="#">Комментарии</a>
@@ -46,12 +45,19 @@
             </ul>
           </nav>
 
+          <div class="comment-block">
+            <div class="image-container">
+              <img id="randomImage" src="" alt="">
+            </div>
+            <button class="sendComment-btn" onclick="getRandomHumanImage">Send</button>
+          </div>
 
-        </div>
+
       </div>
 
       </div>
     </section>
     <script type="module" src="/src/main.ts"></script>
+
   </body>
 </html>
